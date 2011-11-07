@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Locby - Locality application written in Ruby on Rails</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<header id="layout">
+	<h1>Locby - Locality app written in RoR</h1>
+</header>
+
+<nav id="top">
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="/catalog">Categories</a></li>
+		<li><a href="/catalog/fresh">Fresh</a></li>
+		<li><a href="/catalog/top">Top</a></li>
+		<li><a href="/catalog/add">Add location</a></li>
+	</ul>
+</nav>	
+
+<section id="content">
+<%= yield %>
+</section>
+
+<footer id="layout">
+	<ul>
+		<li><a href="/about">About</a></li>
+		<li><a href="/contact">Contact Us</a></li>
+	</ul>
+</footer>
+
+</body>
+</html>
